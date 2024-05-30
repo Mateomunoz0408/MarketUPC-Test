@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Cambiado a blanco */
+    background-color: #ffffff;
 }
 
 header {
@@ -12,10 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Fija la barra de navegación */
-    top: 0;
     width: 100%;
-    z-index: 1000; /* Asegura que la barra de navegación esté siempre encima de otros elementos */
 }
 
 header h1 {
@@ -45,19 +42,18 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: #8b0000;
-    transform: scale(1.05); /* Efecto hover */
+    transform: scale(1.05);
 }
 
-/* Ajusta las secciones para compensar la barra de navegación fija */
 #intro, #features, #testimonials, #contact {
-    padding-top: 6rem; /* Ajusta el valor según la altura de tu barra de navegación */
-    margin-bottom: 1rem; /* Ajusta el margen inferior */
+    padding-top: 2rem;
+    margin-bottom: 0;
 }
 
 .intro {
-    background-color: #ffffff; /* Cambiado a blanco */
+    background-color: #ffffff;
     color: black;
-    padding: 5rem 2rem 2rem 2rem; /* Ajustar el padding superior */
+    padding: 5rem 2rem 2rem 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,7 +87,7 @@ header nav ul li a:hover {
 .intro .buttons a:hover {
     background-color: #8b0000;
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Efecto hover */
+    transform: scale(1.05);
 }
 
 .image img {
@@ -196,11 +192,11 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 1rem; /* Ajusta el margen superior */
+    gap: 2rem;
 }
 
 .contact-info p {
-    margin: 1rem 2rem;
+    margin: 0;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -217,7 +213,5 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
