@@ -1,41 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Cambiado a blanco */
 }
 
 header {
     background-color: #b10000;
     color: white;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fija la barra de navegación */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de navegación esté siempre encima de otros elementos */
 }
 
-nav ul {
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+header nav ul li {
+    margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px 20px;
+    background-color: #a30000;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #8b0000;
+    transform: scale(1.05); /* Efecto hover */
+}
+
+/* Ajusta las secciones para compensar la barra de navegación fija */
+#intro, #features, #testimonials, #contact {
+    padding-top: 6rem; /* Ajusta el valor según la altura de tu barra de navegación */
+    margin-bottom: 1rem; /* Ajusta el margen inferior */
 }
 
 .intro {
-    background-color: #330000;
-    color: white;
-    padding: 2rem;
+    background-color: #ffffff; /* Cambiado a blanco */
+    color: black;
+    padding: 5rem 2rem 2rem 2rem; /* Ajustar el padding superior */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    padding: 1rem;
     text-align: center;
 }
 
+.intro .text {
+    max-width: 50%;
+}
+
 .intro .buttons {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .intro .buttons a {
@@ -45,16 +84,132 @@ nav ul li a {
     text-decoration: none;
     margin: 0 5px;
     border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
-.image {
-    text-align: center;
-    margin: 2rem 0;
+.intro .buttons a:hover {
+    background-color: #8b0000;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Efecto hover */
 }
 
 .image img {
-    max-width: 80%;
+    max-width: 100%;
+    max-height: 400px;
     height: auto;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: white;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 1rem;
+}
+
+.feature img {
+    width: 100px;
+    height: auto;
+}
+
+.feature h3 {
+    color: #b10000;
+    margin-top: 1rem;
+}
+
+.feature p {
+    color: #333;
+}
+
+.testimonials {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: #b10000;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.testimonial-content {
+    max-width: 600px;
+}
+
+.testimonial-content h3 {
+    margin: 0;
+    color: #b10000;
+}
+
+.contact {
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #b10000;
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.social-media a {
+    margin: 0 1rem;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem; /* Ajusta el margen superior */
+}
+
+.contact-info p {
+    margin: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.contact-info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
 }
 
 footer {

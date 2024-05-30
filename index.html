@@ -5,31 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market UPC</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Market UPC</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#intro">Inicio</a></li>
+                <li><a href="#features">Nosotros</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="intro">
-            <h2>Vende y compra tus materiales o artículos de estudio</h2>
-            <p>Con Market UPC podrás vender tus artículos de estudio a otros compañeros, o podrás comprar lo que necesites para tus siguientes ciclos académicos</p>
-            <div class="buttons">
-                <a href="#" class="app-store">Download on the App Store</a>
-                <a href="#" class="google-play">Get it on Google Play</a>
+        <section id="intro" class="intro">
+            <div class="column text">
+                <h2>Vende y compra tus materiales o artículos de estudio</h2>
+                <p>Con Market UPC podrás vender tus artículos de estudio a otros compañeros, o podrás comprar lo que necesites para tus siguientes ciclos académicos</p>
+                <div class="buttons">
+                    <a href="#" class="app-store">Download on the App Store</a>
+                    <a href="#" class="google-play">Get it on Google Play</a>
+                </div>
+            </div>
+            <div class="column image">
+                <img src="images/upc-building.jpg" alt="UPC Building">
             </div>
         </section>
-        <section class="image">
-            <img src="upc-building.jpg" alt="UPC Building">
+        
+        <!-- Nueva sección de características -->
+        <section id="features" class="features">
+            <div class="feature">
+                <img src="images/vende.png" alt="Vende">
+                <h3>Vende</h3>
+                <p>Aquello que ya no utilices y que te sirvió a lo largo de tu carrera, aún no lo deseches, puede servirle a otro estudiante</p>
+            </div>
+            <div class="feature">
+                <img src="images/contacto.png" alt="Mantente en contacto">
+                <h3>Mantente en contacto</h3>
+                <p>En esta plataforma podrás sentirte en confianza con el vendedor o comprador, ellos son estudiantes como tú</p>
+            </div>
+            <div class="feature">
+                <img src="images/compra.png" alt="Compra">
+                <h3>Compra</h3>
+                <p>Si estás buscando algún material de estudio, información relevante de algún curso o unos simples apuntes de clase, podrás encontrarlos aquí</p>
+            </div>
         </section>
+
+        <!-- Nueva sección de testimonios -->
+        <section id="testimonials" class="testimonials">
+            <h2>Que dicen sobre Market UPC</h2>
+            <div class="testimonial">
+                <img src="images/joseph.png" alt="Joseph Quispe">
+                <div class="testimonial-content">
+                    <h3>Joseph Quispe</h3>
+                    <p><strong>Estudiante</strong></p>
+                    <p>“Gracias a Market UPC he podido encontrar apuntes de clase para unos cursos que llevaré en mi siguiente ciclo académico. La interacción con el vendedor fue genial e incluso me dio recomendaciones para ciertos cursos.”</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="images/andres.png" alt="Andrés Ramirez">
+                <div class="testimonial-content">
+                    <h3>Andrés Ramirez</h3>
+                    <p><strong>Estudiante</strong></p>
+                    <p>“Cada vez que termino un ciclo académico, dejo de lado muchos apuntes de clase o productos utilizados, pero esta vez he podido ayudar a otros estudiantes. He vendido un trabajo que siento que podría servirles de guía para que obtengan la mejor nota posible.”</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección de contacto -->
+        <section id="contact" class="contact">
+            <h2>Ponte en contacto con nosotros</h2>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="discord-icon.png" alt="Discord"></a>
+            </div>
+            <div class="contact-info">
+                <p><img src="phone-icon.png" alt="Phone"> (01) 1234567</p>
+                <p><img src="location-icon.png" alt="Location"> Avenida General Salaverry 2255</p>
+            </div>
+        </section>        
     </main>
     <footer>
         <p>&copy; 2024 Market UPC. Todos los derechos reservados.</p>
